@@ -8,6 +8,7 @@ body.archive #categories .title,
 body.archive #tags .title {
     display: inline-block;
     background: #c8c8c8;
+    border: 1px solid #c8c8c8;
     color: #54575a;
     padding: 0.5rem;
     border-radius: 0.2rem;
@@ -29,6 +30,13 @@ body.archive #tags ul li {
     border-radius: 0.3rem;
     border: 1px solid #c8c8c8;
     margin-top: 1rem;
+}
+
+body.archive #categories ul li.selected,
+body.archive #tags ul li.selected {
+    font-weight: bold;
+    color: #ffc107;
+    border-color: #ffc107;
 }
 
 body.archive #categories ul li a,
@@ -67,7 +75,7 @@ body.archive #posts ul {
 
 body.archive #posts > div.title {
     font-size: 3rem;
-    cursor:default;
+    cursor: default;
     padding: 2rem;
 }
 
